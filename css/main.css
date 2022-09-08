@@ -238,7 +238,8 @@ footer .container i:hover {
 /* End feature */
 /* Start Details */
 #details .container {
-  margin: 100px auto;
+  padding: 100px 0;
+  margin: 0px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
