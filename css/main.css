@@ -270,6 +270,81 @@ footer .container i:hover {
   transform: scale(1.1);
 }
 /* End Details */
+/* Start Services */
+#services {
+  background-color: #efefef;
+  padding: 50px 0;
+}
+#services .container {
+  padding: 50px 20px;
+}
+#services .row .col {
+  background-color: white;
+  min-width: 300px;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #aaa;
+  transition-duration: 0.3s;
+  box-shadow: 5px 5px 5px 0 #aaa;
+}
+#services .row .col:hover {
+  transform: translateY(-15px);
+  box-shadow: 10px 10px 10px 0 #aaa;
+}
+#services .row .col h3 {
+  margin: 20px 0;
+}
+#services .row .col p {
+  color: #666;
+  font-size: 14px;
+}
+/* End Services */
+/* Start Hire */
+#hire .container {
+  padding: 100px 0;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+#hire h2 {
+  margin: 0;
+}
+#hire p {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left !important;
+}
+#hire div a {
+  background-color: var(--main-color);
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 20px;
+  box-shadow: 0 5px 5px 0 #cc9003;
+  transition-duration: 0.3s;
+}
+#hire a:hover {
+  transform: scale(1.1);
+}
+#hire img {
+  max-height: 500px;
+}
+/* End Hire */
+/* Start Marketing */
+#marketing .container {
+  padding: 100px 0;
+  margin: 50px auto;
+}
+#marketing .container div p {
+  max-width: 600px;
+  margin: 50px auto;
+  color: #aaa;
+}
+/* End Marketing */
 @media (max-width: 767.98px) {
   .text-light {
     width: 100%;
@@ -301,5 +376,18 @@ footer .container i:hover {
   }
   #details .text p {
     text-align: left;
+  }
+  #hire .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  #hire .container h2 {
+    margin: auto;
+  }
+  #hire .container p {
+    text-align: center !important;
+  }
+  #hire img {
+    width: 100%;
   }
 }
