@@ -19,7 +19,7 @@ body {
   text-align: center;
 }
 .section-title + p {
-  width: fit-content;
+  max-width: 600px;
   margin: 0 auto;
   color: #aaa;
   text-align: center;
@@ -201,7 +201,7 @@ footer .container i:hover {
 /* End footer */
 /* Start feature */
 #feature {
-  padding: 50px 0;
+  padding: 50px 20px;
 }
 #details h2,
 #feature h2 {
@@ -238,7 +238,7 @@ footer .container i:hover {
 /* End feature */
 /* Start Details */
 #details .container {
-  padding: 100px 0;
+  padding: 100px 20px;
   margin: 0px auto;
   display: flex;
   justify-content: space-between;
