@@ -345,6 +345,19 @@ footer .container i:hover {
   color: #aaa;
 }
 /* End Marketing */
+#carrers {
+  padding: 100px 0;
+}
+#carrers h2 {
+  color: var(--secondary-color);
+  margin: 30px 0;
+}
+#carrers p {
+  color: #aaa;
+}
+#contact {
+  padding: 50px;
+}
 @media (max-width: 767.98px) {
   .text-light {
     width: 100%;
