@@ -10,6 +10,7 @@
 }
 body {
   font-family: "Poppins", sans-serif;
+  counter-reset: counter;
 }
 .section-title {
   width: fit-content;
@@ -19,7 +20,6 @@ body {
   text-align: center;
 }
 .section-title + p {
-  max-width: 600px;
   margin: 0 auto;
   color: #aaa;
   text-align: center;
@@ -177,28 +177,32 @@ body {
   padding: 10px;
 }
 /* End Web */
-/* Start footer */
-footer {
-  background-color: #0f0e17;
-  color: white;
-  padding: 30px;
-  margin-top: 50px;
+/* Start Account Management */
+#account-management {
+  margin: 100px 0;
 }
-footer .container {
+#account-management .container {
+  padding: 100px 20px;
+}
+#account-management .row .col {
+  text-align: center;
+}
+#account-management .row .btn {
+  background-color: var(--secondary-color);
+  height: 70px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 20px 30px;
+  transition-duration: 0.3s;
+  transition-property: transform;
 }
-footer .container span {
-  color: var(--secondary-color);
+#account-management .row .btn:focus,
+#account-management .row .btn:hover {
+  transform: scale(1.1);
 }
-footer .container i {
-  margin: 0 10px;
-  font-size: 20px;
-}
-footer .container i:hover {
-  color: var(--secondary-color);
-}
-/* End footer */
+/* End Account Management */
 /* Start feature */
 #feature {
   padding: 50px 20px;
@@ -278,29 +282,33 @@ footer .container i:hover {
 #services .container {
   padding: 50px 20px;
 }
-#services .row .col {
-  background-color: white;
-  min-width: 300px;
-  padding: 20px;
-  margin: 10px;
-  border: 1px solid #aaa;
-  transition-duration: 0.3s;
-  box-shadow: 5px 5px 5px 0 #aaa;
-}
-#services .row .col:hover {
-  transform: translateY(-15px);
-  box-shadow: 10px 10px 10px 0 #aaa;
-}
-#services .row .col h3 {
-  margin: 20px 0;
-}
-#services .row .col p {
+
+#mobile-development .container p {
   color: #666;
-  font-size: 14px;
+  width: 90%;
+  text-align: center;
+  margin: 50px auto;
+}
+#mobile-development .container .col p {
+  text-align: left;
+  width: 100%;
+}
+#services section .container .row {
+  margin-top: 50px;
+}
+#web-development .cycle .col::before {
+  content: "0" counter(counter);
+  counter-increment: counter;
+  padding: 20px;
+  font-size: 40px;
+  color: #aaa;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 /* End Services */
 /* Start Hire */
-#hire .container {
+#hire .container:first-child {
   padding: 100px 0;
   margin: 50px auto;
   display: flex;
@@ -308,15 +316,16 @@ footer .container i:hover {
   align-items: center;
   gap: 100px;
 }
-#hire h2 {
+#hire .container:first-child h2 {
   margin: 0;
 }
-#hire p {
+#hire .container:first-child p {
+  padding: 30px;
   font-size: 14px;
   line-height: 1.5;
   text-align: left !important;
 }
-#hire div a {
+#hire .container:first-child div a {
   background-color: var(--main-color);
   color: white;
   text-decoration: none;
@@ -327,22 +336,64 @@ footer .container i:hover {
   box-shadow: 0 5px 5px 0 #cc9003;
   transition-duration: 0.3s;
 }
-#hire a:hover {
+#hire .container:first-child a:hover {
   transform: scale(1.1);
 }
 #hire img {
   max-height: 500px;
+  padding: 20px;
 }
 /* End Hire */
 /* Start Marketing */
 #marketing .container {
-  padding: 100px 0;
+  padding: 100px 30px;
   margin: 50px auto;
+  position: relative;
 }
-#marketing .container div p {
+#marketing div p {
   max-width: 600px;
   margin: 50px auto;
   color: #aaa;
+}
+#marketing .container-fluid {
+  background-color: #eee;
+  padding: 100px 50px 150px;
+  color: #666;
+}
+#marketing .container-fluid .row {
+  margin-top: 100px;
+}
+#marketing .container-fluid .col {
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+#marketing .container-fluid .col i {
+  font-size: 25px;
+}
+#marketing .container-fluid .col h3 {
+  margin: 20px;
+  font-size: 18px;
+}
+#marketing .container-fluid .col p {
+  margin: 0;
+}
+#marketing div a {
+  background-color: var(--main-color);
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 5px 5px 0 #cc9003;
+  transition-duration: 0.3s;
+  transform-origin: left center;
+}
+#marketing a:hover {
+  transform: scale(1.1) translateX(-50%);
 }
 /* End Marketing */
 #carrers {
@@ -358,6 +409,40 @@ footer .container i:hover {
 #contact {
   padding: 50px;
 }
+/* Start footer */
+footer {
+  background-color: #0f0e17;
+  color: white;
+  padding: 30px;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+footer .container span {
+  color: var(--secondary-color);
+}
+footer .container a {
+  color: white;
+  text-decoration: none;
+}
+footer .container i {
+  margin: 0 10px;
+  font-size: 20px;
+}
+footer .container a:nth-child(1):hover {
+  color: #046ee5;
+}
+footer .container a:nth-child(2):hover {
+  color: #00acee;
+}
+footer .container a:nth-child(3):hover {
+  color: #bc2a8d;
+}
+footer .container a:nth-child(4):hover {
+  color: red;
+}
+/* End footer */
 @media (max-width: 767.98px) {
   .text-light {
     width: 100%;
