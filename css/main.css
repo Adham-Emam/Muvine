@@ -409,6 +409,33 @@ body {
 #contact {
   padding: 50px;
 }
+/* Start ecommerce-item */
+#ecommerce-item .container {
+  padding: 30px;
+}
+#ecommerce-item .row {
+  margin: 30px 0;
+  text-align: center;
+}
+#ecommerce-item .row .col h4 {
+  margin: 20px 0;
+}
+#ecommerce-item .container:not(:first-child) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+#ecommerce-item .container:not(:first-child) h3 {
+  margin: 30px 0;
+}
+#ecommerce-item .container:not(:first-child) img {
+  width: 500px;
+}
+#ecommerce-item .container p {
+  color: #666;
+}
+/* End ecommerce-item */
 /* Start footer */
 footer {
   background-color: #0f0e17;
@@ -451,6 +478,16 @@ footer .container a:nth-child(4):hover {
   .text-light h1 {
     margin-bottom: 30px;
   }
+  #ecommerce-item .container:not(:first-child) {
+    flex-direction: column;
+  }
+  #ecommerce-item .container:nth-child(3),
+  #ecommerce-item .container:nth-child(5) {
+    flex-direction: column-reverse;
+  }
+  #ecommerce-item .col .main-img {
+    max-width: 300px;
+  }
   footer .container {
     flex-direction: column;
   }
@@ -487,5 +524,8 @@ footer .container a:nth-child(4):hover {
   }
   #hire img {
     width: 100%;
+  }
+  #ecommerce-item .container:not(:first-child) img {
+    width: 300px;
   }
 }

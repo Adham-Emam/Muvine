@@ -5,26 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muvine</title>
-    <link rel="icon" href="images/Muvine-logo.png" />
+    <link rel="icon" href="../images/Muvine-logo.png" />
+    <!-- BootStrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    />
     <!-- font Awesome Librarry -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
     <!-- CSS stylesheet -->
-    <link rel="stylesheet" href="css/main.css" />
-    <!-- BootStrap -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <style>
+      .link {
+        background-color: var(--main-color);
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: inline-block;
+        margin: 50px 0;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 10px;
+        box-shadow: 0 5px 5px 0 #cc9003;
+        transition-duration: 0.3s;
+        transform-origin: left center;
+      }
+      .link:hover {
+        transform: scale(1.1) translateX(-50%);
+        color: white;
+      }
+      p i {
+        color: #5c5;
+        font-size: 20px;
+        margin-right: 20px;
+      }
+      #ecommerce-item .col div {
+        margin: 40px 0;
+        text-align: left;
+      }
+      #ecommerce-item .col {
+        text-align: left;
+      }
+      #ecommerce-item .col .main-img {
+        width: 500px;
+        margin: 0 auto;
+      }
+    </style>
   </head>
   <body>
-    <!-- Start Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-light">
       <div class="container">
-        <a class="navbar-brand" href="index.html"
-          ><img src="images/Muvine-logo.png" height="50px" alt=""
+        <a class="navbar-brand" href="../index.html"
+          ><img src="../images/Muvine-logo.png" height="50px" alt=""
         /></a>
         <button
           class="navbar-toggler"
@@ -40,7 +76,10 @@
         <div class="collapse navbar-collapse" id="main">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link p-lg-3" aria-current="page" href="index.html"
+              <a
+                class="nav-link p-lg-3"
+                aria-current="page"
+                href="../index.html"
                 >Home</a
               >
             </li>
@@ -58,7 +97,7 @@
                 <li>
                   <a
                     class="dropdown-item"
-                    href="ecommerce.html#details"
+                    href="../ecommerce.html#details"
                     target="_blank"
                     ><img
                       src="https://img.icons8.com/dusk/30/000000/marketplace-hub.png"
@@ -69,7 +108,7 @@
                 <li>
                   <a
                     class="dropdown-item"
-                    href="ecommerce.html#details"
+                    href="../ecommerce.html#details"
                     target="_blank"
                     ><img
                       src="https://img.icons8.com/plasticine/30/000000/new-product.png"
@@ -80,7 +119,7 @@
                 <li>
                   <a
                     class="dropdown-item"
-                    href="ecommerce.html#details"
+                    href="../ecommerce.html#details"
                     target="_blank"
                     ><img
                       src="https://img.icons8.com/color/30/000000/clipboard.png"
@@ -91,7 +130,7 @@
                 <li>
                   <a
                     class="dropdown-item"
-                    href="ecommerce.html#details"
+                    href="../ecommerce.html#details"
                     target="_blank"
                     ><img
                       src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/30/000000/external-shipping-web-store-flaticons-lineal-color-flat-icons-4.png"
@@ -102,7 +141,7 @@
                 <li>
                   <a
                     class="dropdown-item"
-                    href="ecommerce.html#details"
+                    href="../ecommerce.html#details"
                     target="_blank"
                     ><img
                       src="https://img.icons8.com/color/30/000000/garage-closed.png"
@@ -113,7 +152,7 @@
                 <li>
                   <a
                     class="dropdown-item"
-                    href="ecommerce.html#details"
+                    href="../ecommerce.html#details"
                     target="_blank"
                     ><img
                       src="https://img.icons8.com/external-flaticons-flat-flat-icons/30/000000/external-payment-technology-ecommerce-flaticons-flat-flat-icons.png"
@@ -124,7 +163,7 @@
                 <li>
                   <a
                     class="dropdown-item"
-                    href="ecommerce.html#details"
+                    href="../ecommerce.html#details"
                     target="_blank"
                     ><img
                       src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/30/000000/external-catalog-web-store-flaticons-lineal-color-flat-icons-3.png"
@@ -135,7 +174,7 @@
                 <li>
                   <a
                     class="dropdown-item"
-                    href="ecommerce.html#details"
+                    href="../ecommerce.html#details"
                     target="_blank"
                     ><img
                       src="https://img.icons8.com/external-becris-lineal-color-becris/30/000000/external-analysis-data-science-becris-lineal-color-becris-1.png"
@@ -157,7 +196,7 @@
               <ul class="dropdown-menu">
                 <li class="dropdown-item">
                   <a
-                    href="web.html#services"
+                    href="../web.html#services"
                     class="dropdown-item"
                     target="_blank"
                   >
@@ -168,17 +207,21 @@
                   </a>
                 </li>
                 <li class="dropdown-item">
-                  <a href="web.html#hire" class="dropdown-item" target="_blank">
+                  <a
+                    href="../web.html#hire"
+                    class="dropdown-item"
+                    target="_blank"
+                  >
                     <img
                       src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/30/000000/external-hire-project-management-xnimrodx-lineal-color-xnimrodx.png"
                     />
                     Hire a Developer
                   </a>
                 </li>
-                <li class="dropdown-item">
+                <li class="../dropdown-item">
                   <a
                     class="dropdown-item"
-                    href="web.html#marketing"
+                    href="../web.html#marketing"
                     target="_blank"
                   >
                     <img
@@ -190,10 +233,10 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-lg-3" href="carrers.html">Carrers</a>
+              <a class="nav-link p-lg-3" href="../carrers.html">Carrers</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-lg-3" href="contact.html">Contact Us</a>
+              <a class="nav-link p-lg-3" href="../contact.html">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -201,197 +244,130 @@
     </nav>
     <!-- End Navbar -->
     <!-- Start Contact -->
-    <a href="contact.html" class="contact d-none d-sm-block">
+    <a href="../contact.html" class="contact d-none d-sm-block">
       <i class="fa-solid fa-comment-dots"></i> Contact Us
     </a>
     <!-- End Contact -->
-    <!-- Start Features -->
-    <section id="feature" class="container">
-      <h2>Muvine Features</h2>
-      <p>
-        <i class="fa-solid fa-check"></i> Simple to use, wise, and intuitive
-      </p>
-      <p>
-        <i class="fa-solid fa-check"></i> Consistently Devoted Customer Support
-      </p>
-      <p>
-        <i class="fa-solid fa-check"></i>
-        integrated with more than 100 marketplaces, web retailers, ERP, couriers
-        & more.
-      </p>
-      <a href="contact.html" target="_blank">Let's Discuss</a>
-    </section>
-    <!-- End Features -->
-    <!-- Start eCommerce -->
-    <section id="ecommerce">
-      <div class="container text-center">
-        <div class="row mb-5">
+    <!-- Start Warehouse -->
+    <section id="ecommerce-item">
+      <div class="container">
+        <div class="row">
           <div class="col">
-            <i class="fa-solid fa-money-bill-trend-up"></i>
-            <a href="ecommerce.html#details">Marketplace Registrations</a>
+            <h2 class="section-title">eCommerce Warehouse Management</h2>
+            <p>
+              Sync multiple warehouses to marketplaces like Amazon, Flipkart,
+              Nykaa & more.
+            </p>
+            <div>
+              <p>
+                <i class="fa-solid fa-circle-check"></i>Connect Multiple
+                Warehouses to Marketplaces
+              </p>
+              <p>
+                <i class="fa-solid fa-circle-check"></i>Warehouses Allocation
+                Rules
+              </p>
+              <p>
+                <i class="fa-solid fa-circle-check"></i>Warehouses Access Rules
+              </p>
+              <p>
+                <i class="fa-solid fa-circle-check"></i>Map Physical Aisles &
+                Racks
+              </p>
+              <p>
+                <i class="fa-solid fa-circle-check"></i>Warehouse Overview on
+                Insights Dashboard
+              </p>
+              <p><i class="fa-solid fa-circle-check"></i>And More....</p>
+            </div>
           </div>
-          <div class="col">
-            <i class="fa-solid fa-boxes-stacked"></i>
-            <a href="ecommerce.html#details">inventory management</a>
-          </div>
-          <div class="col">
-            <i class="fa-solid fa-clipboard-list"></i>
-            <a href="ecommerce.html#details">order management</a>
-          </div>
-          <div class="col">
-            <i class="fa-solid fa-truck-fast"></i>
-            <a href="ecommerce.html#details">courier management</a>
-          </div>
-          <div class="col">
-            <i class="fa-solid fa-warehouse"></i>
-            <a href="ecommerce.html#details">warehouse management</a>
-          </div>
-          <div class="col">
-            <i class="fa-solid fa-credit-card"></i>
-            <a href="ecommerce.html#details">payment management</a>
-          </div>
-          <div class="col">
-            <i class="fa-solid fa-store"></i>
-            <a href="ecommerce.html#details">Catalog Creation</a>
-          </div>
-          <div class="col">
-            <i class="fa-solid fa-chart-line"></i>
-            <a href="ecommerce.html#details">analytics dashboard & reports</a>
+          <div class="col text-center">
+            <img src="../images/warehouse.png" alt="" />
           </div>
         </div>
       </div>
-    </section>
-    <!-- End eCommerce -->
-    <hr />
-    <!-- Start Details -->
-    <section id="details">
+      <h2 class="section-title">eCommerce Warehouse Management with Muvine</h2>
       <div class="container">
-        <img src="images/online-shopping-store.png" alt="" />
+        <img src="../images/warehouse-overview-1.png" alt="" />
         <div>
-          <h2>Marketplace Registrations</h2>
-          <p>Pre-integrated channels for quick and simple growth.</p>
-          <div class="text">
-            <p>
-              <i class="fa-solid fa-check"></i> 100+ registrations in all,
-              including those for ERP systems, courier services, and online
-              businesses.
-            </p>
-            <p>
-              <i class="fa-solid fa-check"></i> From a single Muvine dashboard,
-              manage your inventory, orders, warehousing, shipping, courier,
-              remittance, reports, and more.
-            </p>
-          </div>
-          <a href="ecommerce features/marketplace.html"
-            >Explore Registrations</a
-          >
-          <a href="contact.html">Let's Discuss</a>
-        </div>
-      </div>
-      <div class="container">
-        <img src="images/inventory.png" alt="" />
-        <div>
-          <h2>Management of Centralized Inventory</h2>
-          <p>Inventory for multiple locations from a single source of truth</p>
-          <div class="text">
-            <p>
-              <i class="fa-solid fa-check"></i>Inventory from various warehouses
-              and stores is available from a single source of truth across all
-              internet platforms.
-            </p>
-            <p>
-              <i class="fa-solid fa-check"></i>Smart inventory rules for low
-              stock warnings and buffer stock will help you avoid overselling.
-            </p>
-          </div>
-          <a href="ecommerce features/inventory.html"
-            >Explore Inventory Management</a
-          >
-          <a href="contact.html">Let's Discuss</a>
-        </div>
-      </div>
-      <div class="container">
-        <img src="images/clipboard.png" alt="" />
-        <div>
-          <h2>Order Management</h2>
-          <p>Process All Orders from A Single Dashboard</p>
-          <div class="text">
-            <p>
-              <i class="fa-solid fa-check"></i>Ship all orders from eCommerce
-              marketplaces in bulk using a single seller panel.
-            </p>
-            <p>
-              <i class="fa-solid fa-check"></i>Simply sync, pack, ship, and
-              repeat to simplify online sales!
-            </p>
-          </div>
-          <a href="ecommerce features/order.html">Explore Order Management</a>
-          <a href="contact.html">Let's Discuss</a>
-        </div>
-      </div>
-      <div class="container">
-        <img src="images/delivery-location.png" alt="" />
-        <div>
-          <h2>Courier Management</h2>
+          <h3>Connect Multiple Warehouses</h3>
+          <p>Using Muvine, sync every warehouse to every marketplace.</p>
           <p>
-            Partners with pre-integrated courier services for smooth shipping
+            Include fulfilment centres run by logistics/3PL partners and
+            marketplace-owned warehouses.
           </p>
-          <div class="text">
-            <p>
-              <i class="fa-solid fa-check"></i>scheduling pick-ups and
-              ready-to-ship triggers for efficient shipment
-            </p>
-            <p>
-              <i class="fa-solid fa-check"></i>Order allocation for AWB and
-              courier based on rules.
-            </p>
-          </div>
-          <a href="ecommerce features/courier.html"
-            >Explore Courier Management</a
-          >
-          <a href="contact.html">Let's Discuss</a>
+          <p>
+            Connect warehouses that are part of a variety of marketplace
+            fulfilment programmes, including Amazon FBA, Amazon Seller Flex,
+            Flipkart Smart, Flipkart Assured, Myntra PPMP, and others.
+          </p>
         </div>
       </div>
       <div class="container">
-        <img src="images/warehouse.png" alt="" />
         <div>
-          <h2>Warehouse Management</h2>
-          <p>Multi-warehouse management for e-fulfillment</p>
-          <div class="text">
-            <p>
-              <i class="fa-solid fa-check"></i>Integration of multiple
-              warehouses for centralised inventory control.
-            </p>
-            <p>
-              <i class="fa-solid fa-check"></i>Smart WMS = Smarter Supply Chain
-              Management
-            </p>
-          </div>
-          <a href="ecommerce features/warehouse.html"
-            >Explore Warehouse Management</a
-          >
-          <a href="contact.html">Let's Discuss</a>
+          <h3>Warehouses Allocation Rules</h3>
+          <p>
+            For more efficient order fulfilment, assign products or SKUs to
+            warehouses based on local demand or proximity.
+          </p>
+          <p>
+            Assign warehouses to process orders in accordance with pin codes,
+            geographic locations, marketplaces, marketplace fulfilment methods,
+            and more.
+          </p>
+        </div>
+        <img src="../images/warehouse-overview-2.png" alt="" />
+      </div>
+      <a href="../contact.html" class="link">Let's Discuss</a>
+      <div class="container">
+        <img src="../images/warehouse-overview-3.png" alt="" />
+        <div>
+          <h3>Warehouses Access Rules</h3>
+          <p>
+            Choose the user-based access roles for each warehouse. For instance,
+            the warehouse manager at one location is the only one who has access
+            to the data.
+          </p>
+          <p>
+            All warehouses are accessible to administrators and other roles.
+          </p>
         </div>
       </div>
       <div class="container">
-        <img src="images/credit-card.png" alt="" />
+        <img src="../images/warehouse-overview-4.png" alt="" />
         <div>
-          <h2>Payment Management</h2>
-          <p>Track payments for each order to stay on top</p>
-          <div class="text">
-            <p>
-              <i class="fa-solid fa-check"></i>Tracking payments and payment
-              inconsistencies has been made easier.
-            </p>
-          </div>
-          <a href="ecommerce features/payment.html"
-            >Explore payment Management</a
-          >
-          <a href="contact.html">Let's Discuss</a>
+          <h3>
+            All warehouses are accessible to administrators and other roles.
+          </h3>
+          <p>
+            By mapping your aisle & rack data on Muvine, you may quickly
+            decrease the time required for picking products in accordance with
+            orders.
+          </p>
+          <p>
+            For simple product selection, all you will need is a Muvine
+            pick-list.
+          </p>
         </div>
       </div>
+      <div class="container">
+        <img src="../images/warehouse-overview-5.png" alt="" />
+        <div>
+          <h3>Warehouse Overview on Insights Dashboard</h3>
+          <p>
+            The "Insights Dashboard" provided by Muvine provides a visual
+            breakdown of your warehouse activities.
+          </p>
+          <p>
+            Get a visual representation of your warehouse's "in-stock,"
+            "low-stock," and "out-of-stock" conditions.
+          </p>
+          <p>Download any data set in excel</p>
+        </div>
+      </div>
+      <a href="../contact.html" class="link">Let's Discuss</a>
     </section>
-    <!-- End Details -->
+    <!-- End Warehouse -->
     <!-- Start footer -->
     <footer>
       <div class="container">

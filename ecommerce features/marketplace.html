@@ -5,26 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muvine</title>
-    <link rel="icon" href="images/Muvine-logo.png" />
+    <link rel="icon" href="../images/Muvine-logo.png" />
+    <!-- BootStrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    />
     <!-- font Awesome Librarry -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
     <!-- CSS stylesheet -->
-    <link rel="stylesheet" href="css/main.css" />
-    <!-- BootStrap -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <style>
+      .link {
+        background-color: var(--main-color);
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: inline-block;
+        margin: 50px 0;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 10px;
+        box-shadow: 0 5px 5px 0 #cc9003;
+        transition-duration: 0.3s;
+        transform-origin: left center;
+      }
+      .link:hover {
+        transform: scale(1.1) translateX(-50%);
+        color: white;
+      }
+    </style>
   </head>
   <body>
-    <!-- Start Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-light">
       <div class="container">
-        <a class="navbar-brand" href="index.html"
-          ><img src="images/Muvine-logo.png" height="50px" alt=""
+        <a class="navbar-brand" href="../index.html"
+          ><img src="../images/Muvine-logo.png" height="50px" alt=""
         /></a>
         <button
           class="navbar-toggler"
@@ -40,7 +60,10 @@
         <div class="collapse navbar-collapse" id="main">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link p-lg-3" aria-current="page" href="index.html"
+              <a
+                class="nav-link p-lg-3"
+                aria-current="page"
+                href="../index.html"
                 >Home</a
               >
             </li>
@@ -58,7 +81,7 @@
                 <li>
                   <a
                     class="dropdown-item"
-                    href="ecommerce.html#details"
+                    href="../ecommerce.html#details"
                     target="_blank"
                     ><img
                       src="https://img.icons8.com/dusk/30/000000/marketplace-hub.png"
@@ -69,7 +92,7 @@
                 <li>
                   <a
                     class="dropdown-item"
-                    href="ecommerce.html#details"
+                    href="../ecommerce.html#details"
                     target="_blank"
                     ><img
                       src="https://img.icons8.com/plasticine/30/000000/new-product.png"
@@ -80,7 +103,7 @@
                 <li>
                   <a
                     class="dropdown-item"
-                    href="ecommerce.html#details"
+                    href="../ecommerce.html#details"
                     target="_blank"
                     ><img
                       src="https://img.icons8.com/color/30/000000/clipboard.png"
@@ -91,7 +114,7 @@
                 <li>
                   <a
                     class="dropdown-item"
-                    href="ecommerce.html#details"
+                    href="../ecommerce.html#details"
                     target="_blank"
                     ><img
                       src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/30/000000/external-shipping-web-store-flaticons-lineal-color-flat-icons-4.png"
@@ -102,7 +125,7 @@
                 <li>
                   <a
                     class="dropdown-item"
-                    href="ecommerce.html#details"
+                    href="../ecommerce.html#details"
                     target="_blank"
                     ><img
                       src="https://img.icons8.com/color/30/000000/garage-closed.png"
@@ -113,7 +136,7 @@
                 <li>
                   <a
                     class="dropdown-item"
-                    href="ecommerce.html#details"
+                    href="../ecommerce.html#details"
                     target="_blank"
                     ><img
                       src="https://img.icons8.com/external-flaticons-flat-flat-icons/30/000000/external-payment-technology-ecommerce-flaticons-flat-flat-icons.png"
@@ -124,7 +147,7 @@
                 <li>
                   <a
                     class="dropdown-item"
-                    href="ecommerce.html#details"
+                    href="../ecommerce.html#details"
                     target="_blank"
                     ><img
                       src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/30/000000/external-catalog-web-store-flaticons-lineal-color-flat-icons-3.png"
@@ -135,7 +158,7 @@
                 <li>
                   <a
                     class="dropdown-item"
-                    href="ecommerce.html#details"
+                    href="../ecommerce.html#details"
                     target="_blank"
                     ><img
                       src="https://img.icons8.com/external-becris-lineal-color-becris/30/000000/external-analysis-data-science-becris-lineal-color-becris-1.png"
@@ -157,7 +180,7 @@
               <ul class="dropdown-menu">
                 <li class="dropdown-item">
                   <a
-                    href="web.html#services"
+                    href="../web.html#services"
                     class="dropdown-item"
                     target="_blank"
                   >
@@ -168,17 +191,21 @@
                   </a>
                 </li>
                 <li class="dropdown-item">
-                  <a href="web.html#hire" class="dropdown-item" target="_blank">
+                  <a
+                    href="../web.html#hire"
+                    class="dropdown-item"
+                    target="_blank"
+                  >
                     <img
                       src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/30/000000/external-hire-project-management-xnimrodx-lineal-color-xnimrodx.png"
                     />
                     Hire a Developer
                   </a>
                 </li>
-                <li class="dropdown-item">
+                <li class="../dropdown-item">
                   <a
                     class="dropdown-item"
-                    href="web.html#marketing"
+                    href="../web.html#marketing"
                     target="_blank"
                   >
                     <img
@@ -190,10 +217,10 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-lg-3" href="carrers.html">Carrers</a>
+              <a class="nav-link p-lg-3" href="../carrers.html">Carrers</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-lg-3" href="contact.html">Contact Us</a>
+              <a class="nav-link p-lg-3" href="../contact.html">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -201,197 +228,107 @@
     </nav>
     <!-- End Navbar -->
     <!-- Start Contact -->
-    <a href="contact.html" class="contact d-none d-sm-block">
+    <a href="../contact.html" class="contact d-none d-sm-block">
       <i class="fa-solid fa-comment-dots"></i> Contact Us
     </a>
     <!-- End Contact -->
-    <!-- Start Features -->
-    <section id="feature" class="container">
-      <h2>Muvine Features</h2>
-      <p>
-        <i class="fa-solid fa-check"></i> Simple to use, wise, and intuitive
-      </p>
-      <p>
-        <i class="fa-solid fa-check"></i> Consistently Devoted Customer Support
-      </p>
-      <p>
-        <i class="fa-solid fa-check"></i>
-        integrated with more than 100 marketplaces, web retailers, ERP, couriers
-        & more.
-      </p>
-      <a href="contact.html" target="_blank">Let's Discuss</a>
-    </section>
-    <!-- End Features -->
-    <!-- Start eCommerce -->
-    <section id="ecommerce">
-      <div class="container text-center">
-        <div class="row mb-5">
+    <!-- Start Marketplace -->
+    <section id="ecommerce-item">
+      <div class="container">
+        <h2 class="section-title">
+          Principal Results of Our Market Management Services
+        </h2>
+        <div class="row">
           <div class="col">
-            <i class="fa-solid fa-money-bill-trend-up"></i>
-            <a href="ecommerce.html#details">Marketplace Registrations</a>
+            <img src="https://img.icons8.com/dotty/100/ffc107/rocket.png" />
+            <h4>Acceleration in Online Sales</h4>
+            <p>
+              We handle the maintenance of your inventory, ASINs, and online
+              marketplace so you can concentrate on strategies to increase
+              online sales.
+            </p>
           </div>
           <div class="col">
-            <i class="fa-solid fa-boxes-stacked"></i>
-            <a href="ecommerce.html#details">inventory management</a>
+            <img
+              src="https://img.icons8.com/external-outline-wichaiwi/100/ffc107/external-marketplace-online-activities-outline-wichaiwi.png"
+            />
+            <h4>Global online marketplace management</h4>
+            <p>
+              We run your market in line with the most recent trends and
+              accepted best practises across the board. We find your
+              international opportunities and assist with your branding and
+              advertising initiatives.
+            </p>
           </div>
           <div class="col">
-            <i class="fa-solid fa-clipboard-list"></i>
-            <a href="ecommerce.html#details">order management</a>
-          </div>
-          <div class="col">
-            <i class="fa-solid fa-truck-fast"></i>
-            <a href="ecommerce.html#details">courier management</a>
-          </div>
-          <div class="col">
-            <i class="fa-solid fa-warehouse"></i>
-            <a href="ecommerce.html#details">warehouse management</a>
-          </div>
-          <div class="col">
-            <i class="fa-solid fa-credit-card"></i>
-            <a href="ecommerce.html#details">payment management</a>
-          </div>
-          <div class="col">
-            <i class="fa-solid fa-store"></i>
-            <a href="ecommerce.html#details">Catalog Creation</a>
-          </div>
-          <div class="col">
-            <i class="fa-solid fa-chart-line"></i>
-            <a href="ecommerce.html#details">analytics dashboard & reports</a>
+            <img
+              src="https://img.icons8.com/external-phatplus-lineal-phatplus/100/ffc107/external-optimize-programming-phatplus-lineal-phatplus.png"
+            />
+            <h4>Content Optmisation and Performance</h4>
+            <p>
+              Your marketplace content is search engine optimised so that it can
+              reach a wider audience. We also provide original solutions to
+              improve the functionality of your website.
+            </p>
           </div>
         </div>
       </div>
-    </section>
-    <!-- End eCommerce -->
-    <hr />
-    <!-- Start Details -->
-    <section id="details">
+      <hr />
       <div class="container">
-        <img src="images/online-shopping-store.png" alt="" />
+        <img src="../images/marketplace-overview-1.jpg" alt="" />
         <div>
-          <h2>Marketplace Registrations</h2>
-          <p>Pre-integrated channels for quick and simple growth.</p>
-          <div class="text">
-            <p>
-              <i class="fa-solid fa-check"></i> 100+ registrations in all,
-              including those for ERP systems, courier services, and online
-              businesses.
-            </p>
-            <p>
-              <i class="fa-solid fa-check"></i> From a single Muvine dashboard,
-              manage your inventory, orders, warehousing, shipping, courier,
-              remittance, reports, and more.
-            </p>
-          </div>
-          <a href="ecommerce features/marketplace.html"
-            >Explore Registrations</a
-          >
-          <a href="contact.html">Let's Discuss</a>
-        </div>
-      </div>
-      <div class="container">
-        <img src="images/inventory.png" alt="" />
-        <div>
-          <h2>Management of Centralized Inventory</h2>
-          <p>Inventory for multiple locations from a single source of truth</p>
-          <div class="text">
-            <p>
-              <i class="fa-solid fa-check"></i>Inventory from various warehouses
-              and stores is available from a single source of truth across all
-              internet platforms.
-            </p>
-            <p>
-              <i class="fa-solid fa-check"></i>Smart inventory rules for low
-              stock warnings and buffer stock will help you avoid overselling.
-            </p>
-          </div>
-          <a href="ecommerce features/inventory.html"
-            >Explore Inventory Management</a
-          >
-          <a href="contact.html">Let's Discuss</a>
-        </div>
-      </div>
-      <div class="container">
-        <img src="images/clipboard.png" alt="" />
-        <div>
-          <h2>Order Management</h2>
-          <p>Process All Orders from A Single Dashboard</p>
-          <div class="text">
-            <p>
-              <i class="fa-solid fa-check"></i>Ship all orders from eCommerce
-              marketplaces in bulk using a single seller panel.
-            </p>
-            <p>
-              <i class="fa-solid fa-check"></i>Simply sync, pack, ship, and
-              repeat to simplify online sales!
-            </p>
-          </div>
-          <a href="ecommerce features/order.html">Explore Order Management</a>
-          <a href="contact.html">Let's Discuss</a>
-        </div>
-      </div>
-      <div class="container">
-        <img src="images/delivery-location.png" alt="" />
-        <div>
-          <h2>Courier Management</h2>
+          <h3>Win the Marketplace with Muvine</h3>
           <p>
-            Partners with pre-integrated courier services for smooth shipping
+            From the initial selection of the best marketplace platforms for
+            your product to the recommendation of the top-selling products that
+            will appear on your company page on the marketplace, our complete
+            service lineup covers it all. Therefore, we concentrate on income
+            streams regardless of whether a customer is using a PC, mobile
+            device, or tablet.
           </p>
-          <div class="text">
-            <p>
-              <i class="fa-solid fa-check"></i>scheduling pick-ups and
-              ready-to-ship triggers for efficient shipment
-            </p>
-            <p>
-              <i class="fa-solid fa-check"></i>Order allocation for AWB and
-              courier based on rules.
-            </p>
-          </div>
-          <a href="ecommerce features/courier.html"
-            >Explore Courier Management</a
-          >
-          <a href="contact.html">Let's Discuss</a>
         </div>
       </div>
       <div class="container">
-        <img src="images/warehouse.png" alt="" />
         <div>
-          <h2>Warehouse Management</h2>
-          <p>Multi-warehouse management for e-fulfillment</p>
-          <div class="text">
-            <p>
-              <i class="fa-solid fa-check"></i>Integration of multiple
-              warehouses for centralised inventory control.
-            </p>
-            <p>
-              <i class="fa-solid fa-check"></i>Smart WMS = Smarter Supply Chain
-              Management
-            </p>
-          </div>
-          <a href="ecommerce features/warehouse.html"
-            >Explore Warehouse Management</a
-          >
-          <a href="contact.html">Let's Discuss</a>
+          <h3>Sell More Products on Marketplaces More Quickly</h3>
+          <p>
+            Launching your online store is a low-risk way to grow your digital
+            sales while improving the shopping experience and discovering new
+            markets.
+          </p>
+        </div>
+        <img src="../images/marketplace-overview-2.jpg" alt="" />
+      </div>
+      <div class="container">
+        <img src="../images/marketplace-overview-3.jpg" alt="" />
+        <div>
+          <h3>
+            Connect right away to other marketplaces to start selling more.
+          </h3>
+          <p>
+            We take use of the most effective techniques to expand into
+            different channels and marketplaces and hasten the launch of your
+            product listings. From developing top-notch data feeds, developing
+            clever procedures to automate tedious chores, conducting potent
+            content experimentation, and taking prompt action on insightful
+            information.
+          </p>
         </div>
       </div>
       <div class="container">
-        <img src="images/credit-card.png" alt="" />
         <div>
-          <h2>Payment Management</h2>
-          <p>Track payments for each order to stay on top</p>
-          <div class="text">
-            <p>
-              <i class="fa-solid fa-check"></i>Tracking payments and payment
-              inconsistencies has been made easier.
-            </p>
-          </div>
-          <a href="ecommerce features/payment.html"
-            >Explore payment Management</a
-          >
-          <a href="contact.html">Let's Discuss</a>
+          <h3>Improve your ability to manage your market.</h3>
+          <p>
+            Improve your understanding of eCommerce and broaden your online
+            presence with us. We'll work with you to increase sales and improve
+            client satisfaction.
+          </p>
         </div>
+        <img src="../images/marketplace-overview-4.jpg" alt="" />
       </div>
+      <a href="../contact.html" class="link">Let's Discuss</a>
     </section>
-    <!-- End Details -->
+    <!-- End Marketplace -->
     <!-- Start footer -->
     <footer>
       <div class="container">

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muvine</title>
+    <link rel="icon" href="../images/Muvine-logo.png" />
+    <!-- BootStrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    />
+    <!-- font Awesome Librarry -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <style>
+      .link {
+        background-color: var(--main-color);
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: inline-block;
+        margin: 50px 0;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 10px;
+        box-shadow: 0 5px 5px 0 #cc9003;
+        transition-duration: 0.3s;
+        transform-origin: left center;
+      }
+      .link:hover {
+        transform: scale(1.1) translateX(-50%);
+        color: white;
+      }
+      p i {
+        color: #5c5;
+        font-size: 20px;
+        margin-right: 20px;
+      }
+      #ecommerce-item .col div {
+        margin: 40px 0;
+        text-align: left;
+      }
+      #ecommerce-item .col .main-img {
+        width: 500px;
+      }
+      .container div .section-title {
+        margin: 30px auto !important;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html"
+          ><img src="../images/Muvine-logo.png" height="50px" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main"
+          aria-controls="main"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link p-lg-3"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active p-lg-3"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                E-commerce Solutions</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../ecommerce.html#details"
+                    target="_blank"
+                    ><img
+                      src="https://img.icons8.com/dusk/30/000000/marketplace-hub.png"
+                    />
+                    Marketplace Registrations</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../ecommerce.html#details"
+                    target="_blank"
+                    ><img
+                      src="https://img.icons8.com/plasticine/30/000000/new-product.png"
+                    />
+                    Inventory Management</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../ecommerce.html#details"
+                    target="_blank"
+                    ><img
+                      src="https://img.icons8.com/color/30/000000/clipboard.png"
+                    />
+                    Order Management</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../ecommerce.html#details"
+                    target="_blank"
+                    ><img
+                      src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/30/000000/external-shipping-web-store-flaticons-lineal-color-flat-icons-4.png"
+                    />
+                    Courier Management</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../ecommerce.html#details"
+                    target="_blank"
+                    ><img
+                      src="https://img.icons8.com/color/30/000000/garage-closed.png"
+                    />
+                    Warehouse Management</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../ecommerce.html#details"
+                    target="_blank"
+                    ><img
+                      src="https://img.icons8.com/external-flaticons-flat-flat-icons/30/000000/external-payment-technology-ecommerce-flaticons-flat-flat-icons.png"
+                    />
+                    Payment Management</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../ecommerce.html#details"
+                    target="_blank"
+                    ><img
+                      src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/30/000000/external-catalog-web-store-flaticons-lineal-color-flat-icons-3.png"
+                    />
+                    Catalog Management</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../ecommerce.html#details"
+                    target="_blank"
+                    ><img
+                      src="https://img.icons8.com/external-becris-lineal-color-becris/30/000000/external-analysis-data-science-becris-lineal-color-becris-1.png"
+                    />
+                    Analytics Dashboard & Reports</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle p-lg-3"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Web Solutions</a
+              >
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">
+                  <a
+                    href="../web.html#services"
+                    class="dropdown-item"
+                    target="_blank"
+                  >
+                    <img
+                      src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/30/000000/external-services-seo-flaticons-lineal-color-flat-icons.png"
+                    />
+                    Services
+                  </a>
+                </li>
+                <li class="dropdown-item">
+                  <a
+                    href="../web.html#hire"
+                    class="dropdown-item"
+                    target="_blank"
+                  >
+                    <img
+                      src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/30/000000/external-hire-project-management-xnimrodx-lineal-color-xnimrodx.png"
+                    />
+                    Hire a Developer
+                  </a>
+                </li>
+                <li class="../dropdown-item">
+                  <a
+                    class="dropdown-item"
+                    href="../web.html#marketing"
+                    target="_blank"
+                  >
+                    <img
+                      src="https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/30/000000/external-digital-marketing-digital-marketing-flatart-icons-lineal-color-flatarticons.png"
+                    />
+                    Digital Marketing
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3" href="../carrers.html">Carrers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3" href="../contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Contact -->
+    <a href="../contact.html" class="contact d-none d-sm-block">
+      <i class="fa-solid fa-comment-dots"></i> Contact Us
+    </a>
+    <!-- End Contact -->
+    <!-- Start Inventory -->
+    <section id="ecommerce-item">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="section-title">eCommerce Inventory Management</h2>
+            <p>
+              Online Inventory Management Software for Amazon, Flipkart, and
+              other marketplaces
+            </p>
+            <div>
+              <p>
+                <i class="fa-solid fa-check-circle"></i> Centralised Inventory
+              </p>
+              <p>
+                <i class="fa-solid fa-check-circle"></i> Link Warehouses &
+                Inventory
+              </p>
+              <p>
+                <i class="fa-solid fa-check-circle"></i> Manage Multiple SKU
+                Codes
+              </p>
+              <p>
+                <i class="fa-solid fa-check-circle"></i> Un-Mapped SKU Alerts
+              </p>
+              <p>
+                <i class="fa-solid fa-check-circle"></i> Inventory Allocation
+                Rule
+              </p>
+              <p>
+                <i class="fa-solid fa-check-circle"></i> Bulk Stock Addition
+              </p>
+              <p><i class="fa-solid fa-check-circle"></i> Download Reports</p>
+              <p><i class="fa-solid fa-check-circle"></i> And More....</p>
+            </div>
+          </div>
+          <div class="col text-center">
+            <img src="../images/inventory.png" class="main-img" alt="" />
+          </div>
+        </div>
+      </div>
+      <hr />
+      <h2 class="section-title">eCommerce Inventory Management with Muvine</h2>
+      <div class="container">
+        <img src="../images/inventory-overview.png" alt="" />
+        <div>
+          <h4>Centralized Inventory</h4>
+          <p>
+            Consolidate your inventory across all online markets. Muvine is a
+            stock-management programme that comes pre-integrated with a number
+            of online markets. From a single dashboard, you can manage and
+            control your inventory system. The BT smart warehouse management
+            solution aids in connecting numerous warehouses as well.
+          </p>
+          <p>
+            Muvine eCommerce inventory management software connects
+            marketplaces, web carts, online stores, offline stores, couriers,
+            ERP and more.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <div>
+          <h4>Link Warehouses & Inventory</h4>
+          <p>
+            Connect a number of warehouses to Muvine's warehouse management
+            system. It is among the most crucial inventory management tools.
+          </p>
+          <p>
+            Add your goods to these warehouses next. As a result, a solid
+            eCommerce inventory system is developed.
+          </p>
+          <p>
+            You'll have a virtual warehouse where stocks will be distributed in
+            accordance with orders from several marketplaces. a crucial path to
+            eCommerce inventory management.
+          </p>
+          <p>
+            With Browntape WMS, set warehouse level access for employees and
+            keep data secure.
+          </p>
+        </div>
+        <img src="../images/inventory-overview-2.png" alt="" />
+      </div>
+      <div class="container">
+        <div class="text-center">
+          <h3 class="section-title">Manage Multiple SKU Codes</h3>
+          <p>
+            Our inventory management system enables you to combine products
+            listed with various SKU numbers on several online stores, like
+            Amazon and Flipkart. An crucial stock management tool for online
+            retailers.
+          </p>
+          <p>
+            All SKU aliases will be connected to individual Muvine SKU codes via
+            a single bulk upload.
+          </p>
+          <p>
+            That is how specialised inventory management for eCommerce works.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="text-center">
+          <h3 class="section-title">Inventory Allocation Rules</h3>
+          <p>
+            Establish inventory allocation guidelines and choose how many
+            products will be displayed on each marketplace. Muvine also aids in
+            inventory control for your online store.
+          </p>
+          <p>
+            Use safety stock settings, maximum stock limits, low stock triggers,
+            and other stock maintenance tools.
+          </p>
+          <p>
+            It makes sense that Muvine is among India's top eCommerce inventory
+            management systems.
+          </p>
+        </div>
+      </div>
+      <a href="../contact.html" class="link">Let's Discuss</a>
+      <div class="container">
+        <div class="text-center">
+          <h3 class="section-title">Un-Mapped SKU Alerts</h3>
+          <p>
+            Get notified when an SKU is listed on a marketplace but hasn't yet
+            been added to Muvine.
+          </p>
+          <p>
+            Muvine, a specialised eCommerce platform, supports inventory
+            tracking and management. It is a stock management programme with
+            useful guidelines for market listings.
+          </p>
+          <p>
+            Muvine provides users with a thorough SKU ledger and fast error
+            notices. These capabilities make it a favourite online inventory
+            management tool for marketplaces like Amazon, Flipkart, and others.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="text-center">
+          <h3 class="section-title">Bulk Stock Addition</h3>
+          <p>
+            Doing it in bulk is the smarter move. especially when using a small
+            business inventory management programme.
+          </p>
+          <p>
+            In addition to other things, you can bulk add goods, update
+            products, remove SKUs, add bundles, add aliases, and adjust prices.
+          </p>
+          <p>
+            This is among the causes for which the majority of online retailers
+            utilise specialised eCommerce stock management software. A
+            dependable substitute for programmes like Vinculum and Unicommerce
+            is Muvine.
+          </p>
+        </div>
+      </div>
+      <a href="../contact.html" class="link">Let's Discuss</a>
+    </section>
+    <!-- End Inventory -->
+    <!-- Start footer -->
+    <footer>
+      <div class="container">
+        <div>&copy; CopyRight <span>Muvine</span>. All rights reserved</div>
+        <div>
+          <a
+            href="https://www.facebook.com/profile.php?id=100085402817121"
+            target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://twitter.com/MuvineIndia?t=lbYilJv-UzymGht37ZayMQ&s=09"
+            target="_blank"
+          >
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/muvineindia/?igshid=YmMyMTA2M2Y%3D"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCqby_CU5H5yKkQgfv6DA1Ww"
+            target="_blank"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- End footer -->
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
