@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muvine</title>
+    <link rel="icon" href="../images/Muvine-logo.png" />
+    <!-- BootStrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    />
+    <!-- font Awesome Librarry -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <style>
+      .link {
+        background-color: var(--main-color);
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: inline-block;
+        margin: 50px 0;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 10px;
+        box-shadow: 0 5px 5px 0 #cc9003;
+        transition-duration: 0.3s;
+        transform-origin: left center;
+      }
+      .link:hover {
+        transform: scale(1.1) translateX(-50%);
+        color: white;
+      }
+      p i {
+        color: #5c5;
+        font-size: 20px;
+        margin-right: 20px;
+      }
+      #mobile-development .col div {
+        margin: 40px 0;
+        text-align: left;
+      }
+      #mobile-development .col {
+        text-align: left;
+      }
+      #mobile-development .main-img {
+        width: 500px;
+        margin: 0 auto;
+      }
+      #mobile-development .container {
+        margin-bottom: 50px;
+      }
+      .container:not(:first-child) .row .col {
+        position: relative;
+        background-color: white;
+        min-width: 300px;
+        padding: 20px;
+        margin: 10px;
+        border: 1px solid #aaa;
+        transition-duration: 0.3s;
+        box-shadow: 5px 5px 5px 0 #aaa;
+        text-decoration: none;
+      }
+      .container:not(:first-child) .row .col:hover {
+        transform: translateY(-10px);
+        box-shadow: 10px 10px 10px 0 #aaa;
+      }
+      .row .col h3 {
+        margin: 20px 0;
+      }
+      .row .col p {
+        color: #666;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html"
+          ><img src="../images/Muvine-logo.png" height="50px" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main"
+          aria-controls="main"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link p-lg-3"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle p-lg-3"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                E-commerce Solutions</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../ecommerce.html#details"
+                    target="_blank"
+                    ><img
+                      src="https://img.icons8.com/dusk/30/000000/marketplace-hub.png"
+                    />
+                    Marketplace Registrations</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../ecommerce.html#details"
+                    target="_blank"
+                    ><img
+                      src="https://img.icons8.com/plasticine/30/000000/new-product.png"
+                    />
+                    Inventory Management</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../ecommerce.html#details"
+                    target="_blank"
+                    ><img
+                      src="https://img.icons8.com/color/30/000000/clipboard.png"
+                    />
+                    Order Management</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../ecommerce.html#details"
+                    target="_blank"
+                    ><img
+                      src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/30/000000/external-shipping-web-store-flaticons-lineal-color-flat-icons-4.png"
+                    />
+                    Courier Management</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../ecommerce.html#details"
+                    target="_blank"
+                    ><img
+                      src="https://img.icons8.com/color/30/000000/garage-closed.png"
+                    />
+                    Warehouse Management</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../ecommerce.html#details"
+                    target="_blank"
+                    ><img
+                      src="https://img.icons8.com/external-flaticons-flat-flat-icons/30/000000/external-payment-technology-ecommerce-flaticons-flat-flat-icons.png"
+                    />
+                    Payment Management</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../ecommerce.html#details"
+                    target="_blank"
+                    ><img
+                      src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/30/000000/external-catalog-web-store-flaticons-lineal-color-flat-icons-3.png"
+                    />
+                    Catalog Management</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../ecommerce.html#details"
+                    target="_blank"
+                    ><img
+                      src="https://img.icons8.com/external-becris-lineal-color-becris/30/000000/external-analysis-data-science-becris-lineal-color-becris-1.png"
+                    />
+                    Analytics Dashboard & Reports</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active dropdown-toggle p-lg-3"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Web Solutions</a
+              >
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">
+                  <a
+                    href="../web.html#services"
+                    class="dropdown-item"
+                    target="_blank"
+                  >
+                    <img
+                      src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/30/000000/external-services-seo-flaticons-lineal-color-flat-icons.png"
+                    />
+                    Services
+                  </a>
+                </li>
+                <li class="dropdown-item">
+                  <a
+                    href="../web.html#hire"
+                    class="dropdown-item"
+                    target="_blank"
+                  >
+                    <img
+                      src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/30/000000/external-hire-project-management-xnimrodx-lineal-color-xnimrodx.png"
+                    />
+                    Hire a Developer
+                  </a>
+                </li>
+                <li class="../dropdown-item">
+                  <a
+                    class="dropdown-item"
+                    href="../web.html#marketing"
+                    target="_blank"
+                  >
+                    <img
+                      src="https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/30/000000/external-digital-marketing-digital-marketing-flatart-icons-lineal-color-flatarticons.png"
+                    />
+                    Digital Marketing
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3" href="../carrers.html">Carrers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3" href="../contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Contact -->
+    <a href="../contact.html" class="contact d-none d-sm-block">
+      <i class="fa-solid fa-comment-dots"></i> Contact Us
+    </a>
+    <!-- End Contact -->
+    <!-- Start Mobile -->
+    <section id="mobile-development">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="section-title">
+              Trusted Mobile App Development Company
+            </h1>
+            <p>
+              With a focus on your company's goals, tech experts at Muvine
+              promote business expansion using advanced mobile technology.
+              Whether developing a single-page interface or the most
+              sophisticated portal, our user-centric approach to developing
+              mobile applications, gets you an outstanding software application
+              that expresses your messages unambiguously.
+            </p>
+            <div>
+              <p>
+                <i class="fa-solid fa-circle-check"></i> Over ten years of
+                glorious experience
+              </p>
+              <p>
+                <i class="fa-solid fa-circle-check"></i>Wallet-friendly hiring
+                models to engage engineers
+              </p>
+              <p>
+                <i class="fa-solid fa-circle-check"></i>Complete transparency in
+                project tracking
+              </p>
+            </div>
+            <a href="../contact.html" class="link">Let's Discuss</a>
+          </div>
+          <div class="col text-center">
+            <img
+              src="../images/Mobile-App-Development.webp"
+              alt=""
+              class="main-img"
+            />
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="container">
+        <h2 class="section-title">
+          Your position at the top of your service niche will be enhanced by our
+          strategic approach to app development.
+        </h2>
+        <div>
+          <p>
+            Whether you require a custom Android or native iOS application,
+            Muvine can offer cutting-edge app development services for start-ups
+            & enterprises that harness the full power of new mobile technology.
+            In this mobile-enabled world, a mobile app development company may
+            play a critical role for your business. We don't just give you an
+            off-the-shelf solution, though, which makes our application
+            engineering truly unique.
+          </p>
+          <p>
+            Instead, we deeply dive into developing the mobile apps you are
+            anxious to have, using our years of experience to create a holistic
+            app strategy, with your application serving as the main element. We
+            identify the mobile needs and the mobile experience you must offer
+            by concentrating on the target audience and their knowledge of
+            application development. We consider speed to market, the deployment
+            environment, scalability, and the mobile platform while ensuring
+            analytics are in place to track the performance of the app before it
+            is used. With a staff of over 100 employees, Muvine has become one
+            of the top firms for developing mobile apps, guaranteeing flawlessly
+            created solutions with the best potential return on your investment
+            in mobile technology.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="section-title">
+          Our Capabilities is driven by three key Concepts
+        </h2>
+        <div class="row">
+          <div class="col">
+            <img
+              src="https://img.icons8.com/bubbles/100/000000/broken-phone.png"
+            />
+            <h3>Mobile First Matters</h3>
+            <p>
+              It is crucial, therefore, that you place mobile at the head of
+              your offering, generating mobile moments at every main phase of
+              your customer’s journey. In the mobile era, this is how you foster
+              loyalty and encourage client consistency.
+            </p>
+          </div>
+          <div class="col">
+            <img
+              src="https://img.icons8.com/external-others-cattaleeya-thongsriphong/100/000000/external-Laptop-network-technology-color-line-others-cattaleeya-thongsriphong-2.png"
+            />
+            <h3>Build and Test</h3>
+            <p>
+              Our team is skilled in the most modern mobile technologies, stages
+              of development, and working practises. These essential elements
+              are combined by our mobile app developers to create excellent
+              mobility solutions of the finest quality.
+            </p>
+          </div>
+          <div class="col">
+            <img src="https://img.icons8.com/bubbles/100/000000/gear.png" />
+            <h3>Measure and Optimize</h3>
+            <p>
+              No matter how much we may like the app, the only true measure of
+              its superiority is how the users feel about the mobile experience
+              you have created for them. Once your app is available, we can
+              assess how well it performs and provide you advice on how to
+              modify and improve the product along the way.
+            </p>
+          </div>
+        </div>
+        <a href="../contact.html" class="link">Let's Discuss</a>
+      </div>
+      <div class="container">
+        <h2 class="section-title">A Trusted Partner</h2>
+        <p>
+          Muvine has carved a niche for itself by offering high-quality and
+          end-to-end mobile app development services to clients from various
+          business verticals. With our innovative and technology-driven
+          approach, we create mobile apps that mitigate risk factors and offer
+          exceptional user experience. With over 9+ years of experience and more
+          than 1500+ projects accomplishments, we take a great pride in offering
+          out-of-the-box custom app development services to our clients. With
+          utmost transparency and professionalism, we have earned the trust and
+          respect of our esteemed clientele.
+        </p>
+        <div class="row">
+          <div class="col">
+            <img
+              src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/100/000000/external-transparency-social-media-agency-flaticons-lineal-color-flat-icons-3.png"
+            />
+            <h3>100% Transparency</h3>
+            <p>
+              You will be in the loop throughout the app development process.
+              Our mobile app developer will ensure that your valuable inputs and
+              directions are taken into account to build an impeccable and
+              superior app.
+            </p>
+          </div>
+          <div class="col">
+            <img
+              src="https://img.icons8.com/external-flaticons-flat-flat-icons/100/000000/external-confidentiality-privacy-flaticons-flat-flat-icons-2.png"
+            />
+            <h3>100% Confidentiality</h3>
+            <p>
+              You can rest assured about confidentiality. We have resources and
+              technologies that facilitate us to keep your data and other vital
+              information safe and secure.
+            </p>
+          </div>
+          <div class="col">
+            <img
+              src="https://img.icons8.com/external-flaticons-flat-flat-icons/100/000000/external-deployment-project-management-flaticons-flat-flat-icons-2.png"
+            />
+            <h3>Deployment in a Stipulated Time-Period</h3>
+            <p>
+              We understand your urgency to make your app live to get the
+              competitive edge. We are a top mobile app development company that
+              delivers and deploys a fully-functional app within the decided
+              time period.
+            </p>
+          </div>
+          <div class="col">
+            <img
+              src="https://img.icons8.com/office/100/000000/ingredients-list.png"
+            />
+            <h3>A Happy & Content Client List</h3>
+            <p>
+              Since our inception, we have served more than 500 clients across
+              25 different countries that are happy and content with our
+              valuable and comprehensive mobile app development solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="section-title">
+          Our areas of excellence and expertise in custom mobile app development
+        </h2>
+        <p>
+          Application development technology in any form is what we are inclined
+          to
+        </p>
+        <div class="row">
+          <div class="col">
+            <img src="https://img.icons8.com/color/100/000000/ios-logo.png" />
+            <h3>iPhone app</h3>
+            <p>
+              Constellation of star iOS developers ensuring uncompromised app
+              performance
+            </p>
+          </div>
+          <div class="col">
+            <img src="https://img.icons8.com/bubbles/100/000000/android.png" />
+            <h3>Android App</h3>
+            <p>
+              Technology with a tinge of art from Android developers makes your
+              app a class apart
+            </p>
+          </div>
+          <div class="col">
+            <img src="https://img.icons8.com/office/100/000000/ipad.png" />
+            <h3>iPad App</h3>
+            <p>
+              Rich knowledge in developing iPad apps makes us a prominent and
+              dependent force
+            </p>
+          </div>
+          <div class="col">
+            <img
+              src="https://img.icons8.com/external-parzival-1997-outline-color-parzival-1997/100/000000/external-platforms-shopstreaming-parzival-1997-outline-color-parzival-1997.png"
+            />
+            <h3>Cross Platform App Development</h3>
+            <p>
+              Create apps that renders the same look, feel & functionalities
+              across devices and platforms, with rich UX
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <img
+              src="https://img.icons8.com/cotton/100/000000/augmented-reality-1-1.png"
+            />
+            <h3>Augmented Reality App</h3>
+            <p>
+              Our expert app developer render articulate AR apps that help you
+              stay well ahead of your peers
+            </p>
+          </div>
+          <div class="col">
+            <img
+              src="https://img.icons8.com/bubbles/100/000000/apple-watch.png"
+            />
+            <h3>Wearable Device App</h3>
+            <p>
+              Our seasoned wearables experts are creative yet smart at ensuring
+              the best performance
+            </p>
+          </div>
+          <div class="col">
+            <img
+              src="https://img.icons8.com/external-elyra-zulfa-mahendra/100/000000/external-vr-metaverse-elyra-zulfa-mahendra.png"
+            />
+            <h3>Virtual Reality App</h3>
+            <p>
+              Pool of Amazing VR app developers to provide impeccable app
+              development service
+            </p>
+          </div>
+          <div class="col">
+            <img src="https://img.icons8.com/nolan/100/ibeacon.png" />
+            <h3>iBeacon App</h3>
+            <p>
+              It primarily comprises of advertisements or little data packets,
+              to broadcast at frequent intervals
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="section-title">
+          Why are we the best among the app development companies?
+        </h2>
+        <p>Know our specialties in application development</p>
+        <div class="row">
+          <div class="col">
+            <img src="https://img.icons8.com/color/64/000000/warranty.png" />
+            <h3>Quality</h3>
+            <p>
+              We believe in quality and constantly provide in building
+              infrastructure which enables us to serve a client’s requirements;
+              state-of-the-art project association systems, the latest hardware,
+              professional skills and more
+            </p>
+          </div>
+          <div class="col">
+            <img src="https://img.icons8.com/office/64/000000/groups.png" />
+            <h3>Experienced Team</h3>
+            <p>
+              With over 9 years of experience, our team of dedicated app
+              developers have built Native and Hybrid mobile apps for
+              enterprise, Startups, and agencies. Our experienced team delivers
+              cutting-edge and the most efficient solutions
+            </p>
+          </div>
+          <div class="col">
+            <img
+              src="https://img.icons8.com/office/64/000000/user-male-circle.png"
+            />
+            <h3>User-Centric</h3>
+            <p>
+              We develop user-friendly mobile apps with high scalability that
+              attract more users towards your app and eventually, more
+              downloads. Our team believe in building more user-oriented apps as
+              per markets trends
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <img src="https://img.icons8.com/office/64/000000/repository.png" />
+            <h3>Integration</h3>
+            <p>
+              We can combine accessible backend systems by creating service
+              layers on top of it, or can build SOA-based middle tiers to
+              leverage different backend systems or heterogeneous databases
+            </p>
+          </div>
+          <div class="col">
+            <img
+              src="https://img.icons8.com/office/64/000000/globe-earth.png"
+            />
+            <h3>Worldwide Approach</h3>
+            <p>
+              We think worldwide but acts locally. We convene you to decide what
+              your requirements are. This worldwide/local approach has proven to
+              be the most resourceful and successful for everyone involved
+            </p>
+          </div>
+          <div class="col">
+            <img src="https://img.icons8.com/office/64/000000/training.png" />
+            <h3>Project Delivery</h3>
+            <p>
+              With our developmental team - we communicate and help with one
+              another to make a client relaxed and sure in our services. These
+              ethnicities make easy fast implementation and deliver results
+            </p>
+          </div>
+        </div>
+      </div>
+      <a href="../contact.html" class="link">Let's Discuss</a>
+    </section>
+    <!-- End Mobile -->
+    <!-- Start footer -->
+    <footer>
+      <div class="container">
+        <div>&copy; CopyRight <span>Muvine</span>. All rights reserved</div>
+        <div>
+          <a
+            href="https://www.facebook.com/profile.php?id=100085402817121"
+            target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://twitter.com/MuvineIndia?t=lbYilJv-UzymGht37ZayMQ&s=09"
+            target="_blank"
+          >
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/muvineindia/?igshid=YmMyMTA2M2Y%3D"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCqby_CU5H5yKkQgfv6DA1Ww"
+            target="_blank"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- End footer -->
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muvine</title>
+    <link rel="icon" href="../images/Muvine-logo.png" />
+    <!-- BootStrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    />
+    <!-- font Awesome Librarry -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <style>
+      .link {
+        background-color: var(--main-color);
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: inline-block;
+        margin: 50px 0;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 10px;
+        box-shadow: 0 5px 5px 0 #cc9003;
+        transition-duration: 0.3s;
+        transform-origin: left center;
+      }
+      .link:hover {
+        transform: scale(1.1) translateX(-50%);
+        color: white;
+      }
+      p i {
+        color: #5c5;
+        font-size: 20px;
+        margin-right: 20px;
+      }
+      #software-development .col div {
+        margin: 40px 0;
+        text-align: left;
+      }
+      #software-development .col {
+        text-align: left;
+      }
+      #software-development .main-img {
+        width: 500px;
+        margin: 0 auto;
+      }
+      #software-development .container {
+        margin-bottom: 50px;
+      }
+      .container:not(:first-child) .row .col {
+        position: relative;
+        background-color: white;
+        min-width: 300px;
+        padding: 20px;
+        margin: 10px;
+        border: 1px solid #aaa;
+        transition-duration: 0.3s;
+        box-shadow: 5px 5px 5px 0 #aaa;
+        text-decoration: none;
+      }
+      .container:not(:first-child) .row .col:hover {
+        transform: translateY(-10px);
+        box-shadow: 10px 10px 10px 0 #aaa;
+      }
+      .row .col h3 {
+        margin: 20px 0;
+      }
+      .row .col p {
+        color: #666;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html"
+          ><img src="../images/Muvine-logo.png" height="50px" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main"
+          aria-controls="main"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link p-lg-3"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle p-lg-3"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                E-commerce Solutions</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../ecommerce.html#details"
+                    target="_blank"
+                    ><img
+                      src="https://img.icons8.com/dusk/30/000000/marketplace-hub.png"
+                    />
+                    Marketplace Registrations</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../ecommerce.html#details"
+                    target="_blank"
+                    ><img
+                      src="https://img.icons8.com/plasticine/30/000000/new-product.png"
+                    />
+                    Inventory Management</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../ecommerce.html#details"
+                    target="_blank"
+                    ><img
+                      src="https://img.icons8.com/color/30/000000/clipboard.png"
+                    />
+                    Order Management</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../ecommerce.html#details"
+                    target="_blank"
+                    ><img
+                      src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/30/000000/external-shipping-web-store-flaticons-lineal-color-flat-icons-4.png"
+                    />
+                    Courier Management</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../ecommerce.html#details"
+                    target="_blank"
+                    ><img
+                      src="https://img.icons8.com/color/30/000000/garage-closed.png"
+                    />
+                    Warehouse Management</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../ecommerce.html#details"
+                    target="_blank"
+                    ><img
+                      src="https://img.icons8.com/external-flaticons-flat-flat-icons/30/000000/external-payment-technology-ecommerce-flaticons-flat-flat-icons.png"
+                    />
+                    Payment Management</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../ecommerce.html#details"
+                    target="_blank"
+                    ><img
+                      src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/30/000000/external-catalog-web-store-flaticons-lineal-color-flat-icons-3.png"
+                    />
+                    Catalog Management</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../ecommerce.html#details"
+                    target="_blank"
+                    ><img
+                      src="https://img.icons8.com/external-becris-lineal-color-becris/30/000000/external-analysis-data-science-becris-lineal-color-becris-1.png"
+                    />
+                    Analytics Dashboard & Reports</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active dropdown-toggle p-lg-3"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Web Solutions</a
+              >
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">
+                  <a
+                    href="../web.html#services"
+                    class="dropdown-item"
+                    target="_blank"
+                  >
+                    <img
+                      src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/30/000000/external-services-seo-flaticons-lineal-color-flat-icons.png"
+                    />
+                    Services
+                  </a>
+                </li>
+                <li class="dropdown-item">
+                  <a
+                    href="../web.html#hire"
+                    class="dropdown-item"
+                    target="_blank"
+                  >
+                    <img
+                      src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/30/000000/external-hire-project-management-xnimrodx-lineal-color-xnimrodx.png"
+                    />
+                    Hire a Developer
+                  </a>
+                </li>
+                <li class="../dropdown-item">
+                  <a
+                    class="dropdown-item"
+                    href="../web.html#marketing"
+                    target="_blank"
+                  >
+                    <img
+                      src="https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/30/000000/external-digital-marketing-digital-marketing-flatart-icons-lineal-color-flatarticons.png"
+                    />
+                    Digital Marketing
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3" href="../carrers.html">Carrers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3" href="../contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Contact -->
+    <a href="../contact.html" class="contact d-none d-sm-block">
+      <i class="fa-solid fa-comment-dots"></i> Contact Us
+    </a>
+    <!-- End Contact -->
+    <!-- Start Software -->
+    <section id="software-development">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="section-title">
+              Bespoke Custom Software Development Company
+            </h1>
+            <p>
+              Top software development firm Muvine assists startups, medium, and
+              large businesses and corporations in building software solutions
+              that serve their commercial needs. Our software development
+              services have a reputation for being flexible and customizable.
+              Muvine is a top-notch software development business to which you
+              may outsource software development since it adheres to the highest
+              industry standards and internationally recognised methodology.
+            </p>
+            <div>
+              <p>
+                <i class="fa-solid fa-circle-check"></i>Agile software
+                development services
+              </p>
+              <p>
+                <i class="fa-solid fa-circle-check"></i>Business-specific
+                software customization
+              </p>
+              <p>
+                <i class="fa-solid fa-circle-check"></i>Software for all-size
+                industry verticals
+              </p>
+            </div>
+            <a href="../contact.html" class="link">Let's Discuss</a>
+          </div>
+          <div class="col text-center">
+            <img
+              src="../images/software_development.webp"
+              alt=""
+              class="main-img"
+            />
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="container">
+        <h2 class="section-title">
+          Full-Service Customized Software Development
+        </h2>
+        <p>
+          One of the most important considerations when choosing Muvine for your
+          custom software development needs is business-specific software
+          development. In other words, our knowledgeable software developers pay
+          attention to everything you say and adjust their work as necessary. It
+          truly is a full-featured software product that your company requires.
+        </p>
+        <div class="row">
+          <div class="col">
+            <img
+              src="https://img.icons8.com/fluency/100/000000/laptop-settings.png"
+            />
+            <h3>Customized software development</h3>
+            <p>
+              We adhere to any directive you give us. A solution that's a
+              perfect fit for your business goals is created by our committed
+              software developers, who are trained to work on and create
+              solutions with predefined business objectives.
+            </p>
+          </div>
+          <div class="col">
+            <img src="https://img.icons8.com/bubbles/100/000000/code.png" />
+            <h3>Web and mobile app development</h3>
+            <p>
+              Web and mobile app development are both a part of software
+              development at Muvine. We devote a lot of time to creating
+              everything from extremely engaging mobile apps to stylish,
+              traditional websites.
+            </p>
+          </div>
+          <div class="col">
+            <img
+              src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/100/000000/external-software-accounting-flaticons-lineal-color-flat-icons.png"
+            />
+            <h3>Advanced software solutions</h3>
+            <p>
+              To improve your company's functionality, we stay on top of the
+              most recent trends and technology in software development. For
+              cutting-edge solutions in AI, VR, SaaS, AR, and ML, get in touch
+              with us.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <img
+              src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/100/000000/external-consultation-psychology-flaticons-lineal-color-flat-icons-2.png"
+            />
+            <h3>Software consultation services</h3>
+            <p>
+              Hire software engineers with a consultative approach. They can
+              help you get quality business solutions that provide analytics to
+              build further plans and goals rendering potential growth to the
+              business.
+            </p>
+          </div>
+          <div class="col">
+            <img
+              src="https://img.icons8.com/external-filled-outline-geotatah/100/000000/external-enterprise-lean-startup-filled-outline-filled-outline-geotatah.png"
+            />
+            <h3>Enterprise software solution</h3>
+            <p>
+              Give your business some wings. Hiring the Muvine software
+              development team will enable you to create mid-sized to large
+              multi-tier software solutions for companies in every industry
+              vertical you can think of.
+            </p>
+          </div>
+          <div class="col">
+            <img src="https://img.icons8.com/bubbles/100/000000/wrench.png" />
+            <h3>Maintenance and support</h3>
+            <p>
+              When you employ our skilled software developer, Muvine—the most
+              sought-after custom software development company—is dedicated to
+              offering unmatched software maintenance and customer support.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="section-title">
+          End-to-End Solutions as Leading Software Development Company
+        </h2>
+        <p>
+          The best professional software developers work for us, and they have
+          first-hand knowledge of the many tools and technologies needed to
+          create high-quality software. We excel at both waterfall and agile
+          software development methodologies, depending on the type of software
+          to be produced, and employ rigorous software testing techniques to
+          ensure the product's quality before delivering it to our clients.
+        </p>
+        <div class="row">
+          <div class="col">
+            <img
+              src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/100/000000/external-consultation-psychology-flaticons-lineal-color-flat-icons-2.png"
+            />
+            <h3>Consultation and development</h3>
+            <p>
+              Hire knowledgeable software developers at Muvine and talk to us
+              about your business operations and strategies. We'll work with you
+              to come up with a well-thought-out solution that is scalable and
+              successful. We offer an answer for every question you have, from
+              corporate automation to digital client management.
+            </p>
+          </div>
+          <div class="col">
+            <img
+              src="https://img.icons8.com/office/100/000000/windows10-personalization.png"
+            />
+            <h3>Software Design to deployment</h3>
+            <p>
+              A one-stop shop is Muvine, a leading custom software development
+              company. You can hire software programmers who specialise in web
+              and mobile technologies or full stack developers. We handle all
+              aspect of your software development project, from software
+              creation through integration into your current business process.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <img
+              src="https://img.icons8.com/external-filled-outline-geotatah/100/000000/external-enterprise-lean-startup-filled-outline-filled-outline-geotatah.png"
+            />
+            <h3>Enterprise mobility</h3>
+            <p>
+              Our web developers and mobile app designers have years of
+              expertise creating high-caliber business software solutions.
+              Utilizing ground-breaking technologies like AR, VR, AI, and
+              chatbots, we create personalised software solutions while
+              emphasising end-to-end service.
+            </p>
+          </div>
+          <div class="col">
+            <img src="https://img.icons8.com/bubbles/100/000000/database.png" />
+            <h3>Database and cloud</h3>
+            <p>
+              We expertly manage large data management software and assist you
+              in creating cloud solutions for a network of businesses. Muvine
+              creates customised software for bigger enterprises, such as web
+              and mobile application solutions, by leveraging clever coding and
+              incredibly adaptable platforms.
+            </p>
+          </div>
+        </div>
+        <a href="../contact.html" class="link">Let's Discuss</a>
+      </div>
+      <div class="container">
+        <h2 class="section-title">
+          Hire Software Developers with profound expertise
+        </h2>
+        <p>
+          We excel in developing all kinds of software as per your requirements
+          making it beneficial to hire remote software developers at Muvine, and
+          automate your business processes. For various technologies we have
+          offshore expert software developers who can efficiently develop
+          to-the-point software tools that can provide your business with the
+          much required edge to stay steps ahead of the competitors.
+        </p>
+        <div class="row">
+          <div class="col">
+            <h3>Business process automation</h3>
+            <p>
+              Whether mobile or web, our customized software product development
+              sticks to your business objectives and company's vision
+            </p>
+          </div>
+          <div class="col">
+            <h3>Research, design, & develop</h3>
+            <p>
+              Our business and technology consultants could be at the helm of
+              your software development life cycle process by providing
+              360-degree solutions to enhance your business
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h3>B2B & B2C software</h3>
+            <p>
+              An all-range software product development at Muvine gets you
+              cutting-edge customized software applications for your businesses,
+              clients, and even stakeholders.
+            </p>
+          </div>
+          <div class="col">
+            <h3>Legacy software shift</h3>
+            <p>
+              Muvine helps you move from legacy software to contemporary
+              technology. Take a big leap in business with the best custom
+              software development agency in the USA.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="section-title">
+          Our Industry Expertise for Software Development
+        </h2>
+        <p>
+          Though we work on any industry vertical under the sun, here is the
+          list of industries we specialize in custom software development
+          solutions. Our software consultants can help you garner information to
+          build best software for your business,
+        </p>
+        <div class="row">
+          <div class="col">
+            <h3>Healthcare and Medical</h3>
+            <p>
+              Bespoke custom software solutions to the most humble profession.
+            </p>
+          </div>
+          <div class="col">
+            <h3>Logistics and Transport</h3>
+            <p>Track your vehicles just in time. Assure timely deliveries.</p>
+          </div>
+          <div class="col">
+            <h3>Telecommunications</h3>
+            <p>
+              Develop cutting edge software solutions for super connectivity.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h3>Retail and commerce</h3>
+            <p>Build technology-driven engaging software that sells</p>
+          </div>
+          <div class="col">
+            <h3>Media and entertainment</h3>
+            <p>Rock the world with highly addictive software product.</p>
+          </div>
+          <div class="col">
+            <h3>Banking and finance</h3>
+            <p>Develop accurate and analytical fintech software products.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h3>Social media software</h3>
+            <p>
+              Connect the world with highly interactive software application
+            </p>
+          </div>
+          <div class="col">
+            <h3>Education and learning</h3>
+            <p>
+              Truly illustrative and easily understandable eLearning software
+            </p>
+          </div>
+          <div class="col">
+            <h3>Travel and Hospitality</h3>
+            <p>
+              Develop everything from Ticketing to Travel Mobility Solutions
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="section-title">
+          Why Muvine for Software Development Solutions?
+        </h2>
+        <p>
+          We have experienced teams of professional software programmers to hire
+          who dedicatedly work on the software project allotted. They strictly
+          abide to the business objectives defined by you to get the best
+          software product on the market. Hire dedicated developers from best
+          software development service providers who can help you to build
+          cost-effective custom software that can increase you RoI.
+        </p>
+        <div class="row">
+          <div class="col">
+            <h3>Quality uncompromised</h3>
+            <p>
+              Hire software development team at Muvine and be assured of
+              flawless functioning of the quality software product.
+            </p>
+          </div>
+          <div class="col">
+            <h3>Experienced programmers</h3>
+            <p>
+              If you want a 360-degree software solution for your business, hire
+              top software developers from Muvine with expertise.
+            </p>
+          </div>
+          <div class="col">
+            <h3>Easy and transparent deals</h3>
+            <p>
+              Muvine is a reputed custom software development company known for
+              its easy and transparent deals.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h3>Unparalleled after-sales support</h3>
+            <p>
+              When you hire our coders for software product development, we
+              assure you that the product performs well even after sales.
+            </p>
+          </div>
+          <div class="col">
+            <h3>End-to-end solutions</h3>
+            <p>
+              Whether you want web development or mobile app development, we
+              have an in-house pool of experienced software engineers.
+            </p>
+          </div>
+          <div class="col">
+            <h3>Accurate reporting</h3>
+            <p>
+              We use industry-standard tools to measure work done and milestones
+              achieved. Get accurate and timely reporting of software
+              development procedure.
+            </p>
+          </div>
+        </div>
+      </div>
+      <a href="../contact.html" class="link">Let's Discuss</a>
+    </section>
+    <!-- End Software -->
+    <!-- Start footer -->
+    <footer>
+      <div class="container">
+        <div>&copy; CopyRight <span>Muvine</span>. All rights reserved</div>
+        <div>
+          <a
+            href="https://www.facebook.com/profile.php?id=100085402817121"
+            target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://twitter.com/MuvineIndia?t=lbYilJv-UzymGht37ZayMQ&s=09"
+            target="_blank"
+          >
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/muvineindia/?igshid=YmMyMTA2M2Y%3D"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCqby_CU5H5yKkQgfv6DA1Ww"
+            target="_blank"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- End footer -->
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

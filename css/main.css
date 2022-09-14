@@ -308,7 +308,7 @@ body {
 }
 /* End Services */
 /* Start Hire */
-#hire .container:first-child {
+#hire .container {
   padding: 100px 0;
   margin: 50px auto;
   display: flex;
@@ -316,16 +316,15 @@ body {
   align-items: center;
   gap: 100px;
 }
-#hire .container:first-child h2 {
+#hire .container h2 {
   margin: 0;
 }
-#hire .container:first-child p {
-  padding: 30px;
+#hire .container p {
   font-size: 14px;
   line-height: 1.5;
   text-align: left !important;
 }
-#hire .container:first-child div a {
+#hire .container div a {
   background-color: var(--main-color);
   color: white;
   text-decoration: none;
@@ -336,49 +335,40 @@ body {
   box-shadow: 0 5px 5px 0 #cc9003;
   transition-duration: 0.3s;
 }
-#hire .container:first-child a:hover {
+#hire .container a:hover {
   transform: scale(1.1);
-}
-#hire img {
-  max-height: 500px;
-  padding: 20px;
 }
 /* End Hire */
 /* Start Marketing */
-#marketing .container {
-  padding: 100px 30px;
+#digital-marketing .container {
+  padding: 50px 30px !important;
   margin: 50px auto;
   position: relative;
 }
-#marketing div p {
-  max-width: 600px;
+#digital-marketing div p {
   margin: 50px auto;
   color: #aaa;
 }
-#marketing .container-fluid {
-  background-color: #eee;
+#digital-marketing .container {
   padding: 100px 50px 150px;
   color: #666;
 }
-#marketing .container-fluid .row {
-  margin-top: 100px;
-}
-#marketing .container-fluid .col {
-  max-width: 400px;
+#digital-marketing .container .col {
+  min-width: 300px;
   margin: 20px auto;
   text-align: center;
 }
-#marketing .container-fluid .col i {
+#digital-marketing .container .col i {
   font-size: 25px;
 }
-#marketing .container-fluid .col h3 {
+#digital-marketing .container .col h3 {
   margin: 20px;
   font-size: 18px;
 }
-#marketing .container-fluid .col p {
+#digital-marketing .container .col p {
   margin: 0;
 }
-#marketing div a {
+#digital-marketing div a {
   background-color: var(--main-color);
   color: white;
   text-decoration: none;
@@ -392,7 +382,7 @@ body {
   transition-duration: 0.3s;
   transform-origin: left center;
 }
-#marketing a:hover {
+#digital-marketing a:hover {
   transform: scale(1.1) translateX(-50%);
 }
 /* End Marketing */
@@ -485,7 +475,7 @@ footer .container a:nth-child(4):hover {
   #ecommerce-item .container:nth-child(5) {
     flex-direction: column-reverse;
   }
-  #ecommerce-item .col .main-img {
+  .main-img {
     max-width: 300px;
   }
   footer .container {
@@ -517,12 +507,12 @@ footer .container a:nth-child(4):hover {
     text-align: center;
   }
   #hire .container h2 {
-    margin: auto;
+    margin: 20px auto;
   }
   #hire .container p {
     text-align: center !important;
   }
-  #hire img {
+  #hire .main-img {
     width: 100%;
   }
   #ecommerce-item .container:not(:first-child) img {
